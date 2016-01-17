@@ -1,0 +1,2 @@
+Git es una herramienta que nos permite llevar un control de versiones en proyectos informaticos.
+Fue diseñada por Linus Torvalds.
