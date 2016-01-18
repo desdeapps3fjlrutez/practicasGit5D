@@ -1,0 +1,14 @@
+Comandos git usados:
+ls- para saber en donde me ubico en el sistema de carpetas
+
+cd- para posicionarse en la carpeta correcta
+
+touch- creacion de archivos
+
+git add .- para preparar los archivos para un commit(confirmacion)
+
+git commit -m"message"- para confirmar los archivos que se pueden subir al repositorio y a la rama master
+
+git push- sube los archivos confirmados a un repositorio
+
+git status- para saber el estado de los archivos que estan listos para hacer commit.
