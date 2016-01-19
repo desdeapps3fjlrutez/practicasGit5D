@@ -1,0 +1,309 @@
+Script iniciado (lun 18 ene 2016 12:23:07 CST
+)[35m18-01-2016, 12:23:07[0m ]0;~
+[32msamotron@e5410: [33m~[0m
+$ cd Coding/git/ && ls
+[0m[01;34mamarillo[0m  [01;34mpracticasGit5D[0m
+[35m18-01-2016, 12:23:19[0m ]0;~/Coding/git
+[32msamotron@e5410: [33m~/Coding/git[0m
+$ cd amarillo/ && ls -al
+total 44
+drwxrwxr-x 5 samotron samotron 4096 ene 18 12:22 [0m[01;34m.[0m
+drwxrwxr-x 4 samotron samotron 4096 ene 18 11:32 [01;34m..[0m
+drwxrwxr-x 2 samotron samotron 4096 ene 18 10:48 [01;34mcss[0m
+drwxrwxr-x 2 samotron samotron 4096 ene 18 02:18 [01;34mimg[0m
+-rw-rw-r-- 1 samotron samotron  562 ene 18 12:16 index.html
+-rw-rw-r-- 1 samotron samotron  465 ene 18 02:22 seccion1.html
+-rw-rw-r-- 1 samotron samotron  467 ene 18 02:22 seccion2.html
+-rw-rw-r-- 1 samotron samotron  462 ene 18 02:22 seccion3.html
+-rw-rw-r-- 1 samotron samotron  463 ene 18 02:23 seccion4.html
+-rw-rw-r-- 1 samotron samotron  472 ene 18 02:22 seccion5.html
+drwxrwxr-x 2 samotron samotron 4096 ene 18 11:49 [01;34mvideo[0m
+[35m18-01-2016, 12:23:42[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git init [K[K[K[K[K[K[K[K[Kls cc[Kss; ls img; ls video/
+estilo.css
+[0m[01;35mEvolution.jpg[0m    [01;35mHikuri.jpg[0m    [01;35mSonmi_CloudAtlas.jpg[0m
+[01;35mHarleyQueen.jpg[0m  [01;35mShenYen.jpeg[0m
+[0m[01;35m4EDhdAHrOg.mp4[0m  [01;35mLeeroy.mp4[0m
+[35m18-01-2016, 12:24:20[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git init
+Initialized empty Git repository in /home/samotron/Coding/git/amarillo/.git/
+[35m18-01-2016, 12:24:44[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git add --a[K[K[K[K[K[K[K[K[K[K[Kgit config --list
+user.name=ssantana92
+user.email=slsantana.datic@utez.edu.mx
+gui.recentrepo=/home/samotron/Coding/git/practicasGit5D
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+[35m18-01-2016, 12:25:01[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git config --list[C[C[C[C[C[Cinit[Kconfig --list[C[C[C[C[C[Cinit[K[Kadd --all
+[35m18-01-2016, 12:25:14[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git commit -,[Km "Commit inicial"
+[master (root-commit) eefe61f] Commit inicial
+ 14 files changed, 138 insertions(+)
+ create mode 100644 css/estilo.css
+ create mode 100644 img/Evolution.jpg
+ create mode 100644 img/HarleyQueen.jpg
+ create mode 100644 img/Hikuri.jpg
+ create mode 100644 img/ShenYen.jpeg
+ create mode 100644 img/Sonmi_CloudAtlas.jpg
+ create mode 100644 index.html
+ create mode 100644 seccion1.html
+ create mode 100644 seccion2.html
+ create mode 100644 seccion3.html
+ create mode 100644 seccion4.html
+ create mode 100644 seccion5.html
+ create mode 100644 video/4EDhdAHrOg.mp4
+ create mode 100644 video/Leeroy.mp4
+[35m18-01-2016, 12:25:40[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ touch asasfdfs[K[K[K[K[K[K[K[K[K[K[K[K[K[Kecho 'archivo basura" [K[K' > asdasddff
+[35m18-01-2016, 12:26:15[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ ls
+asdasddff  [0m[01;34mimg[0m         seccion1.html  seccion3.html  seccion5.html
+[01;34mcss[0m        index.html  seccion2.html  seccion4.html  [01;34mvideo[0m
+[35m18-01-2016, 12:26:20[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir lo que se ha de ejecutar)
+
+	[31masdasddff[m
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+[35m18-01-2016, 12:26:28[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git rm -f asdasddff 
+fatal: pathspec «asdasddff» no coincide con ningún archivo
+[35m18-01-2016, 12:26:41[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ ls[K[Kgit [K[K[K[Kgit add -[Kasdasddff 
+[35m18-01-2016, 12:27:15[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...«para eliminar stage)
+
+	[32mnew file:   asdasddff[m
+
+[35m18-01-2016, 12:27:21[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ gi[K[Kgit commit -m asd[Kdasddff " [1@"
+[master 3ccd2d7] asdasddff
+ 1 file changed, 1 insertion(+)
+ create mode 100644 asdasddff
+[35m18-01-2016, 12:27:58[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git reset[K[K[K[K[K[K[Kit [K[K[Kt log --oneline 
+[?1h=[33m3ccd2d7[m asdasddff[m
+[33meefe61f[m Commit inicial[m
+[K[?1l>[35m18-01-2016, 12:28:14[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git reset asdasddff[K[K[K[K[K[K[K[K[K[K ee[K[K--soft eefe61[Kl[K1f
+[35m18-01-2016, 12:28:36[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git stat[K[K[K[Klog --oneline 
+[?1h=[33meefe61f[m Commit inicial[m
+[K[?1l>[35m18-01-2016, 12:28:46[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...«para eliminar stage)
+
+	[32mnew file:   asdasddff[m
+
+[35m18-01-2016, 12:28:49[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git c[Kreset asdasddff
+[35m18-01-2016, 12:29:29[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git sta
+git: «sta» no es una orden de git. Vea «git --help»
+
+¿Se refiere a alguno de estos?
+	status
+	stage
+	stash
+[35m18-01-2016, 12:29:33[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir lo que se ha de ejecutar)
+
+	[31masdasddff[m
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+[35m18-01-2016, 12:29:35[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ cat[K[K[Kgit add asdasddff 
+[35m18-01-2016, 12:30:00[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git [K rm -f asdasddff 
+rm 'asdasddff'
+[35m18-01-2016, 12:30:16[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+nothing to commit, working directory clean
+[35m18-01-2016, 12:30:21[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ ls
+[0m[01;34mcss[0m  index.html     seccion2.html  seccion4.html  [01;34mvideo[0m
+[01;34mimg[0m  seccion1.html  seccion3.html  seccion5.html
+[35m18-01-2016, 12:30:26[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git log --oneline 
+[?1h=[33meefe61f[m Commit inicial[m
+[K[?1l>[35m18-01-2016, 12:30:37[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ echo[K[K[K[Ktouch otroArchivoBasura
+[35m18-01-2016, 12:31:04[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git add .[Koi[KtroArchivoBasura 
+[35m18-01-2016, 12:31:15[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ ls[K[Kgit status 
+En la rama master
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...«para eliminar stage)
+
+	[32mnew file:   otroArchivoBasura[m
+
+[35m18-01-2016, 12:31:20[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git [K[K[K[Kechio[K[Ko "blah blah" >> otroArchivoBasura 
+[35m18-01-2016, 12:31:37[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...«para eliminar stage)
+
+	[32mnew file:   otroArchivoBasura[m
+
+Cambios no preparados para el commit:
+  (use «git add <archivo>...» para actualizar lo que se ejecutará)
+  (use «git checkout -- <archivo>...« para descartar cambios en le directorio de trabajo)
+
+	[31mmodificado: otroArchivoBasura[m
+
+[35m18-01-2016, 12:31:49[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git checkout otroArchivoBasura
+[35m18-01-2016, 12:31:59[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...«para eliminar stage)
+
+	[32mnew file:   otroArchivoBasura[m
+
+[35m18-01-2016, 12:32:04[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ cat otroArchivoBasura 
+[35m18-01-2016, 12:32:09[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ ****e[K[K[K[K[K###está vacío###
+[35m18-01-2016, 12:32:26[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ ls
+[0m[01;34mcss[0m  index.html         seccion1.html  seccion3.html  seccion5.html
+[01;34mimg[0m  otroArchivoBasura  seccion2.html  seccion4.html  [01;34mvideo[0m
+[35m18-01-2016, 12:32:37[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ rm otroArchivoBasura 
+[35m18-01-2016, 12:32:48[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ geany index.html #voy a editar el index con geany
+[35m18-01-2016, 12:33:40[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...«para eliminar stage)
+
+	[32mnew file:   otroArchivoBasura[m
+
+Cambios no preparados para el commit:
+  (use «git add/rm <archivo>...» para actualizar lo que se ejecutará)
+  (use «git checkout -- <archivo>...« para descartar cambios en le directorio de trabajo)
+
+	[31mmodificado: index.html[m
+	[31mdeleted:    otroArchivoBasura[m
+
+[35m18-01-2016, 12:34:03[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git rm .f otr[K[K[K[K[K[K-f otroArchivoBasura [C[C[C[C[C[C[C[C[C[C[C[C[3P
+rm 'otroArchivoBasura'
+[35m18-01-2016, 12:34:42[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git a[Kdiff index.html
+[?1h=[1mdiff --git a/index.html b/index.html[m[m
+[1mindex 7c57a88..9fb89fa 100644[m[m
+[1m--- a/index.html[m[m
+[1m+++ b/index.html[m[m
+[36m@@ -17,6 +17,9 @@[m[m
+                <video width='320' height='240' controls>[m[m
+                        <source src="video/4EDhdAHrOg.mp4" type="video/mp4">[m[m
+                </video> [m[m
+[32m+[m               [32m<video width='320' height='240' controls>[m[m
+[32m+[m                       [32m<source src="video/Leeroy.mp4" type="video/mp4">[m[m
+[32m+[m               [32m</video>[m[41m [m[m
+                <br>[m[m
+        </body>[m[m
+ </html>[m[m
+[K[?1l>[35m18-01-2016, 12:35:01[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git add .
+[35m18-01-2016, 12:35:15[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git commit -,[Km "Se[K[KSe agrega video Leeroy al índice[K[K[K[K[K[Kin[K[Kíndice"
+[master 772e126] Se agrega video Leeroy al índice
+ 1 file changed, 3 insertions(+)
+[35m18-01-2016, 12:35:47[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git remote add origin https://github.com/ssantana92/amarillo_practicaGrupal .git
+[35m18-01-2016, 12:39:47[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git push -u origin master
+Username for 'https://github.com': ssantana92
+Password for 'https://ssantana92@github.com': 
+Counting objects: 22, done.
+Delta compression using up to 4 threads.
+Compressing objects:   4% (1/21)   Compressing objects:   9% (2/21)   Compressing objects:  14% (3/21)   Compressing objects:  19% (4/21)   Compressing objects:  23% (5/21)   Compressing objects:  28% (6/21)   Compressing objects:  33% (7/21)   Compressing objects:  38% (8/21)   Compressing objects:  42% (9/21)   Compressing objects:  47% (10/21)   Compressing objects:  52% (11/21)   Compressing objects:  57% (12/21)   Compressing objects:  61% (13/21)   Compressing objects:  66% (14/21)   Compressing objects:  71% (15/21)   Compressing objects:  76% (16/21)   Compressing objects:  80% (17/21)   Compressing objects:  85% (18/21)   Compressing objects:  90% (19/21)   Compressing objects:  95% (20/21)   Compressing objects: 100% (21/21)   Compressing objects: 100% (21/21), done.
+Writing objects:   4% (1/22)   Writing objects:   9% (2/22)   Writing objects:  13% (3/22)   Writing objects:  18% (4/22)   Writing objects:  22% (5/22)   Writing objects:  27% (6/22)   Writing objects:  31% (7/22)   Writing objects:  36% (8/22)   Writing objects:  40% (9/22)   Writing objects:  45% (10/22)   Writing objects:  50% (11/22)   Writing objects:  54% (12/22)   Writing objects:  63% (14/22)   Writing objects:  68% (15/22)   Writing objects:  72% (16/22)   Writing objects:  77% (17/22)   Writing objects:  81% (18/22)   Writing objects:  81% (18/22), 1.05 MiB | 280.00 KiB/s   Writing objects:  81% (18/22), 1.17 MiB | 245.00 KiB/s   Writing objects:  81% (18/22), 1.42 MiB | 266.00 KiB/s   Writing objects:  81% (18/22), 1.61 MiB | 273.00 KiB/s   Writing objects:  81% (18/22), 1.86 MiB | 264.00 KiB/s   Writing objects:  81% (18/22), 2.04 MiB | 261.00 KiB/s   Writing objects:  81% (18/22), 2.30 MiB | 156.00 KiB/s   Writing objects:  81% (18/22), 2.42 MiB | 221.00 KiB/s   Writing objects:  81% (18/22), 2.73 MiB | 224.00 KiB/s   Writing objects:  81% (18/22), 2.92 MiB | 223.00 KiB/s   Writing objects:  81% (18/22), 3.23 MiB | 232.00 KiB/s   Writing objects:  81% (18/22), 3.61 MiB | 268.00 KiB/s   Writing objects:  81% (18/22), 3.86 MiB | 274.00 KiB/s   Writing objects:  81% (18/22), 4.05 MiB | 284.00 KiB/s   Writing objects:  81% (18/22), 4.30 MiB | 269.00 KiB/s   Writing objects:  81% (18/22), 4.55 MiB | 264.00 KiB/s   Writing objects:  81% (18/22), 4.86 MiB | 242.00 KiB/s   Writing objects:  81% (18/22), 5.05 MiB | 264.00 KiB/s   Writing objects:  81% (18/22), 5.36 MiB | 245.00 KiB/s   Writing objects:  81% (18/22), 5.55 MiB | 249.00 KiB/s   Writing objects:  81% (18/22), 5.80 MiB | 250.00 KiB/s   Writing objects:  81% (18/22), 6.05 MiB | 246.00 KiB/s   Writing objects:  81% (18/22), 6.17 MiB | 231.00 KiB/s   Writing objects:  81% (18/22), 6.29 MiB | 221.00 KiB/s   Writing objects:  81% (18/22), 6.55 MiB | 215.00 KiB/s   Writing objects:  81% (18/22), 6.86 MiB | 214.00 KiB/s   Writing objects:  81% (18/22), 7.05 MiB | 220.00 KiB/s   Writing objects:  81% (18/22), 7.42 MiB | 246.00 KiB/s   Writing objects:  81% (18/22), 7.67 MiB | 250.00 KiB/s   Writing objects:  81% (18/22), 7.86 MiB | 253.00 KiB/s   Writing objects:  81% (18/22), 8.11 MiB | 275.00 KiB/s   Writing objects:  81% (18/22), 8.36 MiB | 256.00 KiB/s   Writing objects:  81% (18/22), 8.48 MiB | 247.00 KiB/s   Writing objects:  81% (18/22), 8.80 MiB | 231.00 KiB/s   Writing objects:  81% (18/22), 9.11 MiB | 248.00 KiB/s   Writing objects:  81% (18/22), 9.30 MiB | 259.00 KiB/s   Writing objects:  81% (18/22), 9.61 MiB | 260.00 KiB/s   Writing objects:  81% (18/22), 9.92 MiB | 274.00 KiB/s   Writing objects:  81% (18/22), 10.04 MiB | 275.00 KiB/s   Writing objects:  81% (18/22), 10.36 MiB | 273.00 KiB/s   Writing objects:  81% (18/22), 10.67 MiB | 254.00 KiB/s   Writing objects:  81% (18/22), 10.80 MiB | 240.00 KiB/s   Writing objects:  81% (18/22), 10.92 MiB | 233.00 KiB/s   Writing objects:  81% (18/22), 11.17 MiB | 218.00 KiB/s   Writing objects:  81% (18/22), 11.42 MiB | 218.00 KiB/s   Writing objects:  81% (18/22), 11.61 MiB | 224.00 KiB/s   Writing objects:  81% (18/22), 11.92 MiB | 232.00 KiB/s   Writing objects:  81% (18/22), 12.30 MiB | 252.00 KiB/s   Writing objects:  81% (18/22), 12.48 MiB | 272.00 KiB/s   Writing objects:  81% (18/22), 12.73 MiB | 268.00 KiB/s   Writing objects:  81% (18/22), 12.98 MiB | 260.00 KiB/s   Writing objects:  81% (18/22), 13.17 MiB | 271.00 KiB/s   Writing objects:  81% (18/22), 13.48 MiB | 255.00 KiB/s   Writing objects:  81% (18/22), 13.73 MiB | 251.00 KiB/s   Writing objects:  81% (18/22), 13.98 MiB | 254.00 KiB/s   Writing objects:  81% (18/22), 14.30 MiB | 254.00 KiB/s   Writing objects:  81% (18/22), 14.48 MiB | 244.00 KiB/s   Writing objects:  86% (19/22), 14.48 MiB | 244.00 KiB/s   Writing objects:  86% (19/22), 14.61 MiB | 249.00 KiB/s   Writing objects:  86% (19/22), 14.92 MiB | 241.00 KiB/s   Writing objects:  86% (19/22), 15.11 MiB | 244.00 KiB/s   Writing objects:  86% (19/22), 15.36 MiB | 248.00 KiB/s   Writing objects:  86% (19/22), 15.61 MiB | 241.00 KiB/s   Writing objects:  86% (19/22), 15.98 MiB | 250.00 KiB/s   Writing objects:  86% (19/22), 16.11 MiB | 249.00 KiB/s   Writing objects:  86% (19/22), 16.42 MiB | 246.00 KiB/s   Writing objects:  86% (19/22), 16.54 MiB | 244.00 KiB/s   Writing objects:  86% (19/22), 16.73 MiB | 231.00 KiB/s   Writing objects:  86% (19/22), 16.98 MiB | 219.00 KiB/s   Writing objects:  86% (19/22), 17.11 MiB | 214.00 KiB/s   Writing objects:  86% (19/22), 17.48 MiB | 227.00 KiB/s   Writing objects:  86% (19/22), 17.67 MiB | 230.00 KiB/s   Writing objects:  86% (19/22), 17.98 MiB | 252.00 KiB/s   Writing objects:  86% (19/22), 18.30 MiB | 271.00 KiB/s   Writing objects:  86% (19/22), 18.42 MiB | 267.00 KiB/s   Writing objects:  86% (19/22), 18.67 MiB | 261.00 KiB/s   Writing objects:  86% (19/22), 18.98 MiB | 253.00 KiB/s   Writing objects:  86% (19/22), 19.17 MiB | 247.00 KiB/s   Writing objects:  86% (19/22), 19.42 MiB | 241.00 KiB/s   Writing objects:  86% (19/22), 19.67 MiB | 239.00 KiB/s   Writing objects:  86% (19/22), 19.92 MiB | 237.00 KiB/s   Writing objects:  86% (19/22), 20.05 MiB | 237.00 KiB/s   Writing objects:  86% (19/22), 20.42 MiB | 240.00 KiB/s   Writing objects:  86% (19/22), 20.61 MiB | 244.00 KiB/s   Writing objects:  86% (19/22), 20.92 MiB | 256.00 KiB/s   Writing objects:  86% (19/22), 21.04 MiB | 249.00 KiB/s   Writing objects:  86% (19/22), 21.23 MiB | 235.00 KiB/s   Writing objects:  86% (19/22), 21.48 MiB | 226.00 KiB/s   Writing objects:  86% (19/22), 21.80 MiB | 215.00 KiB/s   Writing objects:  90% (20/22), 21.80 MiB | 215.00 KiB/s   Writing objects:  95% (21/22), 21.80 MiB | 215.00 KiB/s   Writing objects: 100% (22/22), 21.80 MiB | 215.00 KiB/s   Writing objects: 100% (22/22), 21.97 MiB | 211.00 KiB/s, done.
+Total 22 (delta 7), reused 0 (delta 0)
+To https://github.com/ssantana92/amarillo_practicaGrupal.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+[35m18-01-2016, 12:42:27[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git status 
+En la rama master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+[35m18-01-2016, 12:59:49[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ git lo[K[K[Klog
+[?1h=* [31m772e126       [32m (HEAD, origin/master, master)[0m Se agrega video Leeroy al índi[m
+* [31meefe61f       [32m[0m Commit inicial[m
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[?1l>[35m18-01-2016, 13:00:01[0m ]0;~/Coding/git/amarillo
+[32msamotron@e5410: [33m~/Coding/git/amarillo[0m
+$ exit
+exit
+
+Script terminado (lun 18 ene 2016 13:00:07 CST
+)
